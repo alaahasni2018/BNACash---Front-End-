@@ -1,72 +1,74 @@
-
 <section class="h-100 bg-dark">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col">
-          <div class="card card-registration my-4">
-            <div class="row g-0">
-              <div class="col-xl-6 d-none d-xl-block">
-                <img
-                  src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/img4.jpg"
-                  alt="Sample photo"
-                  class="img-fluid"
-                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
-                />
-              </div>
-              <div class="col-xl-6">
-                <div class="card-body p-md-5 text-black">
-                  <h3 class="mb-5 text-uppercase">Créer un Compte</h3>
-  
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="nom" nom="nom" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example1m">Nom de famille</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="prenom" nom="prenom" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example1n">Prénom</label>
-                      </div>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img
+                src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/img4.jpg"
+                alt="Sample photo"
+                class="img-fluid"
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
+              />
+            </div>
+
+         <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h3 class="mb-5 text-uppercase">Créer un Compte</h3>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type = "text" name = "nom" placeholder = "Nom de famille" ngModel  class="form-control form-control-lg">
+                      <label class="form-label" for="form3Example1m"></label>
                     </div>
                   </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="adresse"  nom="adresse" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example8">Address</label>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type = "text" name = "prenom" placeholder = "prenom" ngModel  class="form-control form-control-lg">
+                      <label class="form-label" for="form3Example1n"></label>
+                    </div>
                   </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="date"  nom="dateNaissance" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example9">Date Naissance</label>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="tel" nom="tel" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example90">Numéro Téléphone</label>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="email" nom="email" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example99">Email</label>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="login"  nom="login" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example97">Login</label>                  
-                  </div>
-  
-                  <div class="d-flex justify-content-end pt-3">
-                    <button type="button" class="btn btn-light btn-lg">Annuler</button>
-                    <button type="button" class="btn btn-warning btn-lg ms-2">Confirmer</button>
-                  </div>
-  
                 </div>
+
+                <div class="form-outline mb-4">
+                  <input type = "text" name = "adresse" placeholder = "adresse" ngModel class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example8"></label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type = "date" name = "email" placeholder = "Date de Naissance" ngModel class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example9"></label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type = "text" name = "email" placeholder = "Numéro de Téléphone" ngModel class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example90"></label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type = "text" name = "email" placeholder = "email" ngModel class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example99"></label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type = "text" name = "email" placeholder = "Login" ngModel class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example97"></label>                  
+                </div>
+
+                <div class="d-flex justify-content-end pt-3">
+                  <button type="button" class="btn btn-light btn-lg">Annuler</button>
+                  <button type="submit"  class="btn btn-warning btn-lg ms-2">Confirmer</button>
+                </div>
+
               </div>
             </div>
+          </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
